@@ -1,0 +1,34 @@
+The ``solution`` module
+======================
+
+Using ``calc_products_of_all_others``
+-------------------
+  >>> from solution import calc_products_of_all_others as f
+
+Test cases from the example:
+
+  >>> f([1, 2, 3, 4, 5])
+  [120, 60, 40, 30, 24]
+
+  >>> f([3, 2, 1])
+  [2, 3, 6]
+
+Test cases from the eample in the concept
+
+  >>> f([2, 3, 4, 5])
+  [60, 40, 30, 24]
+
+Not trivial Test cases (edge cases):
+ input is an empty array -> empty array back
+  >>> f([])
+  []
+
+ input has just one entry -> array with 1 as only entry
+  >>> f([142])
+  [1]
+
+ input is null/None
+  >>> f(None)
+  Traceback (most recent call last):
+     ...
+  TypeError: 'None' is not allowed for input

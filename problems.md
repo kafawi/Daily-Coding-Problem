@@ -29,6 +29,6 @@ Follow-up: what if you can't use division?
 
 [solution](SOLUTIONS/p002/concept.md)
 
-time: ???
+time: + 2h (solving the problem was fast (15 min), but documentation took long, also got stuck tooooo long with type checking and got distracted a lot. medication wears off at about the beginning of the solving process.)
 
 

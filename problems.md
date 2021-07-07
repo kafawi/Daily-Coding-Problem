@@ -14,7 +14,7 @@ Bonus: Can you do this in one pass?
 
 [solution](SOLUTIONS/p001/concept.md)
 
-time: 40 min, (incl. setup time)
+time: 40 min (incl. set up) 
 
 ---
 

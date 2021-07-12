@@ -73,7 +73,7 @@ lower_pivot_sort(arr: [int], pivot: int) -> int:
     return maybe i // boundery -> length of the outsorted array of e > pivot
 ```
 
-
+[code](solution.py)
 
 afterthoughts, 
 It is the combination of my first 2 thoughts...

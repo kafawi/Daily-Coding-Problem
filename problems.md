@@ -103,6 +103,6 @@ Implement car and cdr.
 
 [solution](SOLUTIONS/p005/concept.md)
 
-time: ???
+time: 30 min - it was strait forward, after it clicks
 
 ---

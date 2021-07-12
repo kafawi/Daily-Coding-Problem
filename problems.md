@@ -80,6 +80,6 @@ You can modify the input array in-place.
 
 [solution](SOLUTIONS/p004/concept.md)
 
-time: 11:00
+time: 3h with research and some a-ha moments
 
 ---

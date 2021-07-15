@@ -120,3 +120,5 @@ If using a language that has no pointers (such as Python), you can assume you ha
 `dereference_pointer` functions that converts between nodes and memory addresses.
 
 [solution](SOLUTIONS/p006/concept.md)
+
+time: 1 day, because cpp.

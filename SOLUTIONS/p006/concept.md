@@ -107,4 +107,4 @@ That took me too long, but I learnd:
   - i am too lazy to install and run an IDE for c/cpp but maybe next time
 
 What to discuss further is the allocation and deallocation of its values Should the list use the move command or does the nodes hold just a reference / smart pointer? It depends on the use case. 
-Docstrings and documentation is missing. A private `get_node(int index)` could be handy for further tests. A Method `Node.get_other_link(Note_ptr link) -> Note_ptr: return both_ ^ link;` or a function `xor(void* a, void* b)-> void*`, that hides the wild casting could make the code more readable. Also what is with other architectures like 32-, 64-, 128-bit.
+Docstrings and documentation is missing. A private `get_node(int index)` could be handy for further tests. A Method `Node.get_other_link(Note_ptr link) -> Note_ptr: return both_ ^ link;` or a function `xor(void* a, void* b)-> void*`, that hides the wild casting could make the code more readable. Also what is with other architectures like 32-, 64-, 128-bit.git 

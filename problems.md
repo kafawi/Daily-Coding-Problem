@@ -125,6 +125,8 @@ time: 1 day, because cpp.
 
 #### maybe i will revisit this problem with `rust` and its
 
+---
+
 ### 7 - Medium
 
 Good morning! Here's your coding interview problem for today.

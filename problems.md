@@ -140,3 +140,6 @@ You can assume that the messages are decodable. For example, `'001'` is not allo
 
 [solution](SOLUTIONS/p007/concept.md)
 
+time: 30min, 5 min for logic, 25 for documenting, testing implementing and "linting"
+
+---

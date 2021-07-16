@@ -128,7 +128,6 @@ time: 1 day, because cpp.
 ---
 
 ### 7 - Medium
-
 Good morning! Here's your coding interview problem for today.
 
 This problem was asked by Facebook.

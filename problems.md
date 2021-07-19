@@ -66,8 +66,6 @@ time:
 ---
 
 ### 4 - Hard
-Good morning! Here's your coding interview problem for today.
-
 This problem was asked by Stripe.
 
 Given an array of integers, find the first missing positive integer in linear time and constant space. 
@@ -85,8 +83,6 @@ time: 3h with research and some a-ha moments
 ---
 
 ### 5 - Medium
-Good morning! Here's your coding interview problem for today.
-
 This problem was asked by Jane Street.
 
 `cons(a, b)` constructs a pair, and `car(pair)` and `cdr(pair)` returns the first and last element of that pair. 

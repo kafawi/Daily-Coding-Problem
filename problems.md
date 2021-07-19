@@ -183,3 +183,6 @@ For example, `[2, 4, 6, 2, 5]` should return `13`, since we pick `2`, `6`, and `
 Follow-up: Can you do this in `O(N)` time and constant space?
 
 [solution](SOLUTIONS/p008/concept.md)
+
+time: day (non continuing) -> because i missunderstood the problem wrong (pre medication kick, i read the problem for, how to get the max sum for non-adjacent numbers and i went bonkerz with an bounded priority queue of 3 and so on...) Check the questions a second time and then prepare with the given testcases, to stop faster if I head to the wrong direction...
+after I check the result... -> new take 1 h

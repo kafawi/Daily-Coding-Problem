@@ -201,3 +201,18 @@ Implement a job scheduler which takes in a function f and an integer n, and call
 time: about 2h, because Api unknown in python for me
 
 ---
+
+### 11 - Medium
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by Twitter.
+
+Implement an autocomplete system. That is, given a query string `s` and a set of all possible query strings, return all strings in the set that have s as a prefix.
+
+For example, given the query string `de` and the set of strings `[dog, deer, deal]`, return `[deer, deal]`.
+
+Hint: Try preprocessing the dictionary into a more efficient data structure to speed up queries.
+
+[solution](SOLUTIONS/p011/concept.md)
+
+time: more than 2h, because i did not know how to implement a trie, and my attention was wobbleing. The pseudo code is too specific and it could be more general in designing the algorithm. 

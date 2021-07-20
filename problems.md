@@ -244,3 +244,7 @@ Given an integer `k` and a string `s`, find the length of the longest substring 
 For example, given `s = "abcba"` and `k = 2`, the longest substring with `k` distinct characters is `"bcb"`.
 
 [solution](SOLUTIONS/p013/concept.md)
+
+time: 2,5 h -> i didnt understand the problem correctly, so i missed one particular condition. Medication was taken. Lesson to lern: make sure, you understand the problem right!
+
+---

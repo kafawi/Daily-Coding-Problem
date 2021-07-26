@@ -272,3 +272,11 @@ Hint: The basic equation of a circle is `x² + y² = r²`.
 time: 30 min for the concept, to explain the process, how I would do a Monte Carlo like method. An Eternalty to get a good finishing condition. But it was fun.
 
 ---
+
+### 15 - Medium
+
+This problem was asked by Facebook.
+
+Given a stream of elements too large to store in memory, pick a random element from the stream with uniform probability.
+
+[solution](SOLUTIONS/p015/concept.md)

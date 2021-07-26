@@ -247,6 +247,8 @@ For example, given `s = "abcba"` and `k = 2`, the longest substring with `k` dis
 
 time: 2,5 h -> i didnt understand the problem correctly, so i missed one particular condition. Medication was taken. Lesson to lern: make sure, you understand the problem right!
 
+The second time, with the right problem to solve, the algorithm was not to complicated, but it takes more than 1h to solve. The missunderstanding is also saved in the folder, if anybody is curious.
+
 ---
 
 ### 14 - Medium
@@ -257,3 +259,5 @@ The area of a circle is defined as `πr²`. Estimate `π` to `3` decimal places 
 Hint: The basic equation of a circle is `x² + y² = r²`.
 
 [solution](SOLUTIONS/p014/concept.md)
+
+time: 30 min for the concept, to explain the process, how I would do a Monte Carlo like method. An Eternalty to get a good finishing condition. But it was fun. 

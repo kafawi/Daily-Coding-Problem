@@ -1,158 +1,80 @@
-`find_longest_substring_with_k_distict_chars(s: string, k: int) -> string`
+# Find the longest Substring in a given String `s` with at most `k` distict characters
 
-There are 3 main things to do, while walking through the string:
-1. count every distict character
-2. track the positions of the distinct characters
-3. check if the current character is counted then `k` times. 
-   -> we have one substring, (first position an this.) that we have to store in a variable if this is the current longest substring
-   -> we drop the count by `1` and drop also the first appearence position
+`find_longest_substring_with_at_most_k_distict_chars(s: string, k: int) -> string`
 
+
+A simple go is on every position, test the rest string and count till we got k distinct characters, when it is done, save this one as a candidate and move to the next position. 
+This aproach wil take $O(n) = n^2$
+
+```
+if k == 0: return ""
+if k == 1: return s[0]
+
+longest = ""
+charset = Set<char>()
+for i=0; i< s.length; i++:
+    charset.clear()
+    charset.add(s[i])
+    for j=i+1; j<s.length; j++:
+        if s[j-1] != s[j]:
+            continue
+        charset.add(s[j])
+        # here i have first to check if the indexx j+1 is out of bound
+        if charset.size() == k
+            substring =s[i:j+1]
+            if (longest.length < substring.length):
+                longest = substring
+            break
+return longest
+```
+
+### is there a smarter way?
+We can formulate a rule: if there is such a substring inside s, then it will start and end with the same character!
+
+There is a smarter way, in the way, that we can search for the next distict character an remeber the position for the next inner loop to start.
+but thats will just boost a little and the complexity is still $n^2$.
+
+Another way to do, is to keep track of the last position of every character and slice after the minimum of this positions if we get stumble on a new character. 
+This will loop over the input string just one. But it will loop over the character to position map at worst `n` times ($O(n,k) = nk$). But if we assume, that `k < n` or even bettr `k << n` than this is way better than $n^2$.
+
+So we have to store some extra information, but we get a time boost. 
+
+To boost it even further, we can have track of the lowest position in map with a map and a heap combination, but this will go to far for this problem ($O(n,k)=nlogk$).
 
 ### Pseudocode
 ```
-find_longest_substring_with_k_distict_chars(s, k):
-    charmap = Map[char : (number, Queue of the positions)]
-    longest_substring = None
-    for i=0; i<s.length; i++:
-      charmap[s[i]].number++
-      charmap[s[i]].queue.enqueue(i)
-      if (charmap[s[i]].number == k):
-        charmap[s[i]].number--
-        start_index = chacharmap[s[i]].dequeue()
-        if longest_substring.length < i + 1 - start_index:
-          longest_substring = s[start_index : i+1]
-    return longest_substring
+find_longest_substring_with_at_most_k_distict_chars(s: string, k: int) -> string:
+    char2lastposition<char, int>
+    longest = NULL
+    substringstart = 0;
+    for pos,ch in s:
+        if ch is not in char2lastposition:
+            if char2lastposition.size == k:
+                if longest.length < pos - substringstart:
+                    longest = s[substringstart: pos]
+                drop_char = get_minimum_char(char2lastposition)  
+                substringstart = char2lastposition[drop_char]+1
+                char2lastposition.drop(drop_char)
+        char2lastposition[ch] = pos
+    if longest.length < s.length - substringstart:
+        longest = s[substringstart: s.length]
+    return longest
+
+get_minimum_char(m: map<char,int>) -> char:
+    min_val = Infinit
+    min_char = None
+    for ch, val in m:
+        if min_val > val:
+           min_char = ch
+           min_val = val
+    return min_char
 ```
 
+in python, to possiblility to return more than 1 value, we can make it a little bit more clearer in the map manipulation.
 
-
-
-### discussion
-What if there is no such substring -> return None
-
-What if k == 0: -> return empty string!  This can be done by making an if statement at the beginning.
-
-If there are more than one such substring of the same length -> retrun any
-
-
-## Okay this attempt does not return the at most condition. I didnt understnd the problem correctly
-`find_longest_substring_with_at_most_k_distict_chars(s :string, k :int): -> string`
-
-A second time think about this:
-
-let us start with the discussion from before:
-- if there are no character that appears `k` times -> return `s` : if `k < 1 -> return s` 
-- If there are more than one such substring of the same length -> retrun any
-
-How do we use do this this time: simple approach is
-
-go through the whole string. and collect the data, we collected befor, but not evaluate at this time.
-
-```
-    charmap = Map[char : (number, positions)]
-    longest_substring = s
-    for i=0; i<s.length; i++:
-      charmap[s[i]].number++
-      charmap[s[i]].positions.add(i)
-```
-
-Now we have the information to evaluate the area.
-
-1. By ignoring every char, that is less than `k` times countet, we construct a a List of (starting_indxes and end_idexes).
-
-2. if any range include completely another range -> this outer range is droped.
-
-3. now we find the wides range and return the substring.
-
-Let us imaginate it with the example
-
-```
-abcda
-
-Collecting stage: before 1
-a : 2, [0,4]
-b : 2, [1,3]
-c : 1, [2]
-
-after step 1:
-[(0, 4), (1, 3)]
-
-in step 2:
-  0 1 2 3 4
-a x       x 
-b   x   x
-
-b is in a
-
-after step 2
-[(1,3)]
-
-step 3:
-max[(1,3) = 2] 
-
--> return s[1, 3+1] = bcb
-
-```
-
-Step 2 is very time consuming: if we come up with a better solution than `O(n) = n*n`, i will assume
-
-
-### Pseudocode
-```
-find_longest_substring_with_at_most_k_distict_chars(s :string, k :int): -> string:
-    charmap = Map[char : (number, positions)]
-    longest_substring = s
-    for i=0; i<s.length; i++:
-        charmap[s[i]].number++
-        charmap[s[i]].positions.add(i)
-    
-    candidates : [(start :int, end :int)]
-
-    for each number, positions in charmap:
-        if number >= k:
-            candidates add all possible pairs of start and end point
-    
-    valid_candidates = copy(candiates)
-    for each a in candidates:
-        for each b in candidates:
-            if a.start < b.start and a.end > b.end:
-                valid_candidates.remove(a)
-            if a.start > a.start and a.end < b.end:
-                valid_candidates.remove(b)
-
-    if valid_candidate not empty:
-        best_candidate = max(valid_candidates, key= x -> x.end - x.start)
-        return s[best_candidate.start: best_candidate.end+1]
-    else 
-      return s
-```
-
-
-#### Optimization
-there is a rule.
-large substrings can be kicked by smaller substrings. but not vise versa.
-so the smalles has the most chance to kick out more candidates.
-
-so if we sort the list of candidates of length, and start at the smallest, that searches the candidates from the longest for inclusion.
-Also we can kick out at we go the candidates out of the list. so the next bigger candidate has to deal with lesser comparisons and so on.
-If there is no bigger one left, this is the longest substring!
-
-A double linked list would be the best data structure because of the constant complexity by removing an item. 
-
-in pseudocode ->
-```
-    candidates = sorted(candidates, key= x-> x.end - x.start)
-
-    for each small in candidates:
-        for all candidates bigger than small in candidates:
-            if the bigger candidate encapsules the small one:
-               candidates.remove(bigger candidate)
-    
-    if candidate not empty:
-        best_candidate =candidates.get_biggest;
-        return s[best_candidate.start: best_candidate.end+1]
-    else 
-      return s
-```
+### edge cases 
+if `k` is less than 1: -> return empty string
+if `s` is empty: -> return empty string
+if `s` is `NULL`: -> return NULL or equivlent  
 
 [code](solution.py)

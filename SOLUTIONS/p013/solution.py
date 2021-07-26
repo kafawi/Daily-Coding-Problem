@@ -1,47 +1,65 @@
-"""Test
-
+"""
 >>> find_longest_substring_with_at_most_k_distict_chars("abcba", 2)
 'bcb'
 
+>>> find_longest_substring_with_at_most_k_distict_chars("aaaaabcccaa", 1)
+'aaaaa'
+
+>>> find_longest_substring_with_at_most_k_distict_chars("aaaaabcccaa", 3)
+'aaaaabcccaa'
+
+
+some edge cases
+>>> find_longest_substring_with_at_most_k_distict_chars("abcba", 1)
+'a'
+
+>>> find_longest_substring_with_at_most_k_distict_chars("abcba", 0)
+''
+
+>>> find_longest_substring_with_at_most_k_distict_chars("abcba", -1)
+''
+
+>>> find_longest_substring_with_at_most_k_distict_chars("", 2)
+''
+
+>>> find_longest_substring_with_at_most_k_distict_chars(None, 2) == None
+True
 """
 
-from collections import deque, namedtuple
-
-
-
 def find_longest_substring_with_at_most_k_distict_chars(s: str, k: int) -> str:
-    class Cstats:
-        def __init__(self):
-              self.number = 0
-              self.positions = list()
-    # collecting
-    charmap = dict()  
-    for i,c in enumerate(s):
-        if c not in charmap:
-            charmap[c] = Cstats()
-        charmap[c].number += 1
-        charmap[c].positions.append(i)
-    
-    # get valid candidates
-    Substring = namedtuple('Substring', ['start','end'])
-    candidates = [Substring(0, len(s)-1)]  # default return if nothin is found
-    for stats in charmap.values():
-        if stats.number >= k:
-            for start,end in zip(stats.positions[:-(k-1)], stats.positions[k-1:]):
-                candidates.append(Substring(start, end))
+    if k <= 0:
+        return ""
+    if s is None:
+        return None
+    if k >= len(s):
+        return s
 
-    # second filtering
-    candidates = sorted(candidates, key=lambda x: x.end - x.start)
-    for smaller in candidates:
-        for bigger in reversed(candidates):
-            if smaller.start > bigger.start and smaller.end < bigger.end:
-                candidates.remove(bigger)
-    
-    # get the longest
-    longest = candidates[-1]
-    return s[longest.start : longest.end+1]
-    
+    char2lastposition = dict()
+    longest = ""
+    substringstart = 0;
+    for pos,ch in enumerate(s):
+        if ch not in char2lastposition:
+            if len(char2lastposition) == k:
+                if len(longest) < pos - substringstart:
+                    longest = s[substringstart: pos]
+                drop_last_position, drop_char = __get_minimum_char(char2lastposition)  
+                substringstart = drop_last_position + 1
+                char2lastposition.pop(drop_char)
+        char2lastposition[ch] = pos
+    if len(longest) < len(s) - substringstart:
+        longest = s[substringstart:]
+    return longest
 
-if __name__=="__main__":
+def __get_minimum_char(m) -> str:
+    min_val = float('inf')
+    min_char = None
+    for ch, val in m.items():
+        if min_val > val:
+           min_char = ch
+           min_val = val
+    return min_val, min_char
+
+
+if __name__ == "__main__":
     import doctest
     doctest.testmod()

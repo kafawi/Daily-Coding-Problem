@@ -297,3 +297,7 @@ You run an e-commerce website and want to record the last `N` order `ids` in a l
 You should be as efficient with time and space as possible.
 
 [solution](SOLUTIONS/p016/concept.md)
+
+time: about 40 min to learn a bit unittest
+
+---

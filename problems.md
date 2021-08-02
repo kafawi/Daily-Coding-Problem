@@ -369,3 +369,13 @@ Do this in `O(n)` time and `O(k)` space. You can modify the input array in-place
 time: (days) too long, because i got confused with the possible in-place manipulation of the array. I did not trust the solutio with the DeQueue, because i did not understand the complexity at first. After online searching and some case examples I understood.
 
 ---
+
+### - Medium
+
+This problem was asked by Facebook.
+
+A builder is looking to build a row of $N$ houses that can be of $K$ different colors. He has a goal of minimizing cost while ensuring that no two neighboring houses are of the same color.
+
+Given an $N$ by $K$ matrix where the $n^{th}$ row and $k^{th}$ column represents the cost to build the $n^{th}$ house with $k^{th}$ color, return the minimum cost which achieves this goal.
+
+[solution](SOLUTIONS/p019/concept.md)

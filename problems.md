@@ -379,3 +379,7 @@ A builder is looking to build a row of $N$ houses that can be of $K$ different c
 Given an $N$ by $K$ matrix where the $n^{th}$ row and $k^{th}$ column represents the cost to build the $n^{th}$ house with $k^{th}$ color, return the minimum cost which achieves this goal.
 
 [solution](SOLUTIONS/p019/concept.md)
+
+time: this took not so long, but i was often distracted, interrupted, doing other things, no meds..., so i do not know, how long actually, less than 3h but more than 1h.
+
+---

@@ -16,7 +16,7 @@ def get_length_of_longest_absolut_path_for_a_file(file_system_represenation: str
         elif __is_file(item):
             longest_path_length = max(stack[-1] + len(item), longest_path_length)
         else:
-            assert True 'This case is not coverd in this solution'
+            assert True, 'This case is not coverd in this solution'
     return longest_path_length
 
 

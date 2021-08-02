@@ -363,3 +363,9 @@ For example, given `array = [10, 5, 2, 7, 8, 7]` and `k = 3`, we should get: `[1
 - 8 = max(7, 8, 7)
 
 Do this in `O(n)` time and `O(k)` space. You can modify the input array in-place and you do not need to store the results. You can simply print them out as you compute them.
+
+[solution](SOLUTIONS/p018/concept.md)
+
+time: (days) too long, because i got confused with the possible in-place manipulation of the array. I did not trust the solutio with the DeQueue, because i did not understand the complexity at first. After online searching and some case examples I understood.
+
+---

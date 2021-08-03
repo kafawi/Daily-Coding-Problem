@@ -411,3 +411,7 @@ Given an array of time intervals `(start, end)` for classroom lectures (possibly
 For example, given `[(30, 75), (0, 50), (60, 150)]`, you should return `2`.
 
 [solution](SOLUTIONS/p021/concept.md)
+
+time: about 1h + 2h fiddeling - I could not concentrate, (maybe too high dose for today). After I got the trick by cheating (get the hint by in the internet...), the solution was very clear and easy.
+
+---

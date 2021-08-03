@@ -349,7 +349,7 @@ time: 1h, main solution was fast, but i got bonkers with the extras.
 
 ---
 
-### - Hard
+### 18 - Hard
 
 This problem was asked by Google.
 
@@ -370,7 +370,7 @@ time: (days) too long, because i got confused with the possible in-place manipul
 
 ---
 
-### - Medium
+### 19 - Medium
 
 This problem was asked by Facebook.
 

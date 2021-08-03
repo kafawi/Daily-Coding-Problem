@@ -397,3 +397,7 @@ In this example, assume nodes with the same value are the exact same node object
 Do this in `O(M + N)` time (where `M` and `N` are the lengths of the lists) and constant space.
 
 [solution](SOLUTIONS/p020/concept.md)
+
+time: about 1h - I wanted to use dataclass and got bonkers with the tests. the task was easy after getting the intersect is more a merge.
+
+---

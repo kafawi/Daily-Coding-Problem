@@ -5,7 +5,7 @@
 >>> find_original_sentence(['bbb', 'aabb'], "aabbb") is None
 True
 
->>> find_original_sentence(['bb', 'aab'], "aabbb")
+>>> find_original_sentence(['bb', 'aa', 'aab'], "aabbb")
 ['aab', 'bb']
 
 >>> a = find_original_sentence(['bed', 'bath', 'bedbath', 'and', 'beyond'], "bedbathandbeyond")

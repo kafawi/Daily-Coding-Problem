@@ -454,3 +454,19 @@ and `start = (3, 0)` (bottom left) and `end = (0, 0)` (top left), the minimum nu
 time: 2h - problem was fast solved, just the nitty witty with the ugly matrix (here double array) and points as tuple - so i got lost in making it a little cleaner. Next time use numpy or something with a nicer tensor ability.
 
 ---
+
+### 24 - Medium
+
+This problem was asked by Google.
+
+Implement locking in a binary tree. A binary tree node can be locked or unlocked only if all of its descendants or ancestors are not locked.
+
+Design a binary tree node class with the following methods:
+
+- `is_locked`, which returns whether the node is locked
+- `lock`, which attempts to lock the node. If it cannot be locked, then it should return `false`. Otherwise, it should lock it and return `true`.
+- `unlock`, which unlocks the node. If it cannot be unlocked, then it should return `false`. Otherwise, it should unlock it and return `true`.
+
+You may augment the node to add parent pointers or any other property you would like. You may assume the class is used in a single-threaded program, so there is no need for actual locks or mutexes. Each method should run in $O(h)$, where $h$ is the height of the tree.
+
+[solution](SOLUTIONS/p024/concept.md)

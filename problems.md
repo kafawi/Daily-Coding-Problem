@@ -476,3 +476,28 @@ You may augment the node to add parent pointers or any other property you would 
 time: days, Got lost in the property annotation in python and in the test cases.
 
 ---
+
+### 25 - Hard
+
+This problem was asked by Facebook.
+
+Implement regular expression matching with the following special characters:
+
+- `.` (period) which matches any single character
+- `*` (asterisk) which matches zero or more of the preceding element
+
+That is, implement a function that takes in a string and a valid regular expression and returns whether or not the string matches the regular expression.
+
+For example, given the regular expression `"ra."` and the string `"ray"`, your function should return `true`. The same regular expression on the string `"raymond"` should return `false`.
+
+Given the regular expression `".*at"` and the string `"chat"`, your function should return `true`. The same regular expression on the string `"chats"` should return `false`.
+
+[solution](SOLUTIONS/p025/concept.md)
+
+time: month, that was overwhelming, f*ck you ADHD
+
+[![ADHDinos every 6 weeks broken link][1]]([2] "ADHDinos")
+
+[1]: https://i.redd.it/reg0uoidkj481.jpg
+[2]: https://www.reddit.com/r/ADHDinos/
+---

@@ -514,6 +514,6 @@ Do this in constant space and in one pass.
 
 [solution](SOLUTIONS/p026/concept.md)
 
-time:
+time: Just a few hours, about 15 min to get head around for the idea, the rest to implement and tweek the algorithm.
 
 ---

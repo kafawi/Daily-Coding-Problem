@@ -563,6 +563,6 @@ For example, given the list of words `["the", "quick", "brown", "fox", "jumps", 
 
 [solution](SOLUTIONS/p028/concept.md)
 
-time:
+time: > 2h because of a misinterpretation of the type. -> first step is not jumping into the designing but into the example construction
 
 ---

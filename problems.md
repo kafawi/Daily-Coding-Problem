@@ -6,11 +6,11 @@ with link to solution and a time how log it takes
 
 ### Short Cuts
 
-|         $n \times 10$ | 0                       | 1                       | 2                       | 3                      | 4                       | 5                       | 6                       | 7                      | 8                     | 9                       |
-| --------------------: | ----------------------- | ----------------------- | ----------------------- | ---------------------- | ----------------------- | ----------------------- | ----------------------- | ---------------------- | --------------------- | ----------------------- |
-|    **[0](#1---easy)** |                         | [&#9632;](#1---easy)    | [&#9632;](#2---hard)    | [&#9632;](#3---medium) | [&#9632;](#4---hard)    | [&#9632;](#5---medium)  | [&#9632;](#6---hard)    | [&#9632;](#7---medium) | [&#9632;](#8---easy)  | [&#9632;](#9---hard)    |
-| **[1](#10---medium)** | [&#9632;](#10---medium) | [&#9632;](#11---medium) | [&#9632;](#12---hard)   | [&#9632;](#13---hard)  | [&#9632;](#14---medium) | [&#9632;](#15---medium) | [&#9632;](#16---easy)   | [&#9632;](#17---hard)  | [&#9632;](#18---hard) | [&#9632;](#19---medium) |
-|   **[2](#20---easy)** | [&#9632;](#20---easy)   | [&#9632;](#21---easy)   | [&#9632;](#22---medium) | [&#9632;](#23---easy)  | [&#9632;](#24---medium) | [&#9632;](#25---hard)   | [&#9632;](#26---medium) |
+|         $n \times 10$ | 0                       | 1                       | 2                       | 3                      | 4                       | 5                       | 6                       | 7                      | 8                       | 9                       |
+| --------------------: | ----------------------- | ----------------------- | ----------------------- | ---------------------- | ----------------------- | ----------------------- | ----------------------- | ---------------------- | ----------------------- | ----------------------- |
+|    **[0](#1---easy)** |                         | [&#9632;](#1---easy)    | [&#9632;](#2---hard)    | [&#9632;](#3---medium) | [&#9632;](#4---hard)    | [&#9632;](#5---medium)  | [&#9632;](#6---hard)    | [&#9632;](#7---medium) | [&#9632;](#8---easy)    | [&#9632;](#9---hard)    |
+| **[1](#10---medium)** | [&#9632;](#10---medium) | [&#9632;](#11---medium) | [&#9632;](#12---hard)   | [&#9632;](#13---hard)  | [&#9632;](#14---medium) | [&#9632;](#15---medium) | [&#9632;](#16---easy)   | [&#9632;](#17---hard)  | [&#9632;](#18---hard)   | [&#9632;](#19---medium) |
+|   **[2](#20---easy)** | [&#9632;](#20---easy)   | [&#9632;](#21---easy)   | [&#9632;](#22---medium) | [&#9632;](#23---easy)  | [&#9632;](#24---medium) | [&#9632;](#25---hard)   | [&#9632;](#26---medium) | [&#9632;](#27---easy)  | [&#9632;](#28---medium) |
 ---
 
 ### 1 - Easy
@@ -538,5 +538,31 @@ Given the string `"([)]"` or `"((()"`, you should return false.
 [solution](SOLUTIONS/p027/concept.md)
 
 time: 1h with everything
+
+---
+
+### 28 - Medium
+
+This problem was asked by Palantir.
+
+Write an algorithm to justify text. Given a sequence of words and an integer line length `k`, return a list of strings which represents each line, fully justified.
+
+More specifically, you should have as many words as possible in each line. There should be at least one space between each word. Pad extra spaces when necessary so that each line has exactly length `k`. Spaces should be distributed as equally as possible, with the extra spaces, if any, distributed starting from the left.
+
+If you can only fit one word on a line, then you should pad the right-hand side with spaces.
+
+Each word is guaranteed not to be longer than `k`.
+
+For example, given the list of words `["the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"]` and `k = 16`, you should return the following:
+
+```python
+["the  quick brown", # 1 extra space on the left
+"fox  jumps  over", # 2 extra spaces distributed evenly
+"the   lazy   dog"] # 4 extra spaces distributed evenly
+```
+
+[solution](SOLUTIONS/p028/concept.md)
+
+time:
 
 ---

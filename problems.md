@@ -530,6 +530,6 @@ Given the string `"([)]"` or `"((()"`, you should return false.
 
 [solution](SOLUTIONS/p027/concept.md)
 
-time:
+time: 1h with everything
 
 ---

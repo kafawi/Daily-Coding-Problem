@@ -10,7 +10,7 @@ with link to solution and a time how log it takes
 | --------------------: | ----------------------- | ----------------------- | ----------------------- | ---------------------- | ----------------------- | ----------------------- | ----------------------- | ---------------------- | ----------------------- | ----------------------- |
 |    **[0](#1---easy)** |                         | [&#9632;](#1---easy)    | [&#9632;](#2---hard)    | [&#9632;](#3---medium) | [&#9632;](#4---hard)    | [&#9632;](#5---medium)  | [&#9632;](#6---hard)    | [&#9632;](#7---medium) | [&#9632;](#8---easy)    | [&#9632;](#9---hard)    |
 | **[1](#10---medium)** | [&#9632;](#10---medium) | [&#9632;](#11---medium) | [&#9632;](#12---hard)   | [&#9632;](#13---hard)  | [&#9632;](#14---medium) | [&#9632;](#15---medium) | [&#9632;](#16---easy)   | [&#9632;](#17---hard)  | [&#9632;](#18---hard)   | [&#9632;](#19---medium) |
-|   **[2](#20---easy)** | [&#9632;](#20---easy)   | [&#9632;](#21---easy)   | [&#9632;](#22---medium) | [&#9632;](#23---easy)  | [&#9632;](#24---medium) | [&#9632;](#25---hard)   | [&#9632;](#26---medium) | [&#9632;](#27---easy)  | [&#9632;](#28---medium) |
+|   **[2](#20---easy)** | [&#9632;](#20---easy)   | [&#9632;](#21---easy)   | [&#9632;](#22---medium) | [&#9632;](#23---easy)  | [&#9632;](#24---medium) | [&#9632;](#25---hard)   | [&#9632;](#26---medium) | [&#9632;](#27---easy)  | [&#9632;](#28---medium) | [&#9632;](#29---easy)   |
 ---
 
 ### 1 - Easy
@@ -564,5 +564,19 @@ For example, given the list of words `["the", "quick", "brown", "fox", "jumps", 
 [solution](SOLUTIONS/p028/concept.md)
 
 time: > 2h because of a misinterpretation of the type. -> first step is not jumping into the designing but into the example construction
+
+---
+
+### 29 - Easy
+
+This problem was asked by Amazon.
+
+Run-length encoding is a fast and simple method of encoding strings. The basic idea is to represent repeated successive characters as a single count and character. For example, the string `"AAAABBBCCDAA"` would be encoded as `"4A3B2C1D2A"`.
+
+Implement run-length encoding and decoding. You can assume the string to be encoded have no digits and consists solely of alphabetic characters. You can assume the string to be decoded is valid.
+
+[solution](SOLUTIONS/p029/concept.md)
+
+time:30 min
 
 ---

@@ -11,6 +11,7 @@ with link to solution and a time how log it takes
 |    **[0](#1---easy)** |                         | [&#9632;](#1---easy)    | [&#9632;](#2---hard)    | [&#9632;](#3---medium) | [&#9632;](#4---hard)    | [&#9632;](#5---medium)  | [&#9632;](#6---hard)    | [&#9632;](#7---medium) | [&#9632;](#8---easy)    | [&#9632;](#9---hard)    |
 | **[1](#10---medium)** | [&#9632;](#10---medium) | [&#9632;](#11---medium) | [&#9632;](#12---hard)   | [&#9632;](#13---hard)  | [&#9632;](#14---medium) | [&#9632;](#15---medium) | [&#9632;](#16---easy)   | [&#9632;](#17---hard)  | [&#9632;](#18---hard)   | [&#9632;](#19---medium) |
 |   **[2](#20---easy)** | [&#9632;](#20---easy)   | [&#9632;](#21---easy)   | [&#9632;](#22---medium) | [&#9632;](#23---easy)  | [&#9632;](#24---medium) | [&#9632;](#25---hard)   | [&#9632;](#26---medium) | [&#9632;](#27---easy)  | [&#9632;](#28---medium) | [&#9632;](#29---easy)   |
+| **[3](#30---medium)** | [&#9632;](#30---medium) |
 ---
 
 ### 1 - Easy
@@ -578,5 +579,20 @@ Implement run-length encoding and decoding. You can assume the string to be enco
 [solution](SOLUTIONS/p029/concept.md)
 
 time:30 min
+
+---
+This problem was asked by Facebook.
+
+You are given an array of non-negative integers that represents a two-dimensional elevation map where each element is unit-width wall and the integer is the height. Suppose it will rain and all spots between two walls get filled up.
+
+Compute how many units of water remain trapped on the map in `O(N)` time and `O(1)` space.
+
+For example, given the input `[2, 1, 2]`, we can hold `1` unit of water in the middle.
+
+Given the input `[3, 0, 1, 3, 0, 5]`, we can hold `3` units in the first index, `2` in the second, and `3` in the fourth index (we cannot hold `5` since it would run off to the left), so we can trap `8` units of water.
+
+[solution](SOLUTIONS/p030/concept.md)
+
+time: some hours, spreaded over days, because, to many possiblilities to solve this in a algorithic way. And too much distractions...
 
 ---

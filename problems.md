@@ -11,7 +11,7 @@ with link to solution and a time how log it takes
 |    **0** |                         | [&#9632;](#1---easy)    | [&#9632;](#2---hard)    | [&#9632;](#3---medium) | [&#9632;](#4---hard)    | [&#9632;](#5---medium)  | [&#9632;](#6---hard)    | [&#9632;](#7---medium) | [&#9632;](#8---easy)    | [&#9632;](#9---hard)    |
 |    **1** | [&#9632;](#10---medium) | [&#9632;](#11---medium) | [&#9632;](#12---hard)   | [&#9632;](#13---hard)  | [&#9632;](#14---medium) | [&#9632;](#15---medium) | [&#9632;](#16---easy)   | [&#9632;](#17---hard)  | [&#9632;](#18---hard)   | [&#9632;](#19---medium) |
 |    **2** | [&#9632;](#20---easy)   | [&#9632;](#21---easy)   | [&#9632;](#22---medium) | [&#9632;](#23---easy)  | [&#9632;](#24---medium) | [&#9632;](#25---hard)   | [&#9632;](#26---medium) | [&#9632;](#27---easy)  | [&#9632;](#28---medium) | [&#9632;](#29---easy)   |
-|    **3** | [&#9632;](#30---medium) | [&#9632;](#31---easy)   | [&#9632;](#32---hard)   | [&#9632;](#33---easy)  | [&#9632;](#34---medium) | [&#9632;](#35---hard)   | [&#9632;](#36---medium) |
+|    **3** | [&#9632;](#30---medium) | [&#9632;](#31---easy)   | [&#9632;](#32---hard)   | [&#9632;](#33---easy)  | [&#9632;](#34---medium) | [&#9632;](#35---hard)   | [&#9632;](#36---medium) | [&#9632;](#37---easy)  |
 ---
 
 ### 1 - Easy
@@ -695,5 +695,21 @@ Given the root to a binary search tree, find the second largest node in the tree
 [solution](SOLUTIONS/p036/concept.md)
 
 time: 45 min
+
+---
+
+## 37 - Easy
+
+This problem was asked by Google.
+
+The power set of a set is the set of all its subsets. Write a function that, given a set, generates its power set.
+
+For example, given the set `{1, 2, 3}`, it should return `{{}, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}}`.
+
+You may also use a list or array to represent a set.
+
+[solution](SOLUTIONS/p037/concept.md)
+
+time: 1 h, much distraction and confusion with set set set set
 
 ---

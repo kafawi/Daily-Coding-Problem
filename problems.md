@@ -11,8 +11,7 @@ with link to solution and a time how log it takes
 |    **0** |                         | [&#9632;](#1---easy)    | [&#9632;](#2---hard)    | [&#9632;](#3---medium) | [&#9632;](#4---hard)    | [&#9632;](#5---medium)  | [&#9632;](#6---hard)    | [&#9632;](#7---medium) | [&#9632;](#8---easy)    | [&#9632;](#9---hard)    |
 |    **1** | [&#9632;](#10---medium) | [&#9632;](#11---medium) | [&#9632;](#12---hard)   | [&#9632;](#13---hard)  | [&#9632;](#14---medium) | [&#9632;](#15---medium) | [&#9632;](#16---easy)   | [&#9632;](#17---hard)  | [&#9632;](#18---hard)   | [&#9632;](#19---medium) |
 |    **2** | [&#9632;](#20---easy)   | [&#9632;](#21---easy)   | [&#9632;](#22---medium) | [&#9632;](#23---easy)  | [&#9632;](#24---medium) | [&#9632;](#25---hard)   | [&#9632;](#26---medium) | [&#9632;](#27---easy)  | [&#9632;](#28---medium) | [&#9632;](#29---easy)   |
-|    **3** | [&#9632;](#30---medium) | [&#9632;](#31---easy)   | [&#9632;](#32---hard)   | [&#9632;](#33---easy)  | [&#9632;](#34---medium) | [&#9632;](#35---hard)   | [&#9632;](#36---medium) | [&#9632;](#37---easy)  |
----
+|    **3** | [&#9632;](#30---medium) | [&#9632;](#31---easy)   | [&#9632;](#32---hard)   | [&#9632;](#33---easy)  | [&#9632;](#34---medium) | [&#9632;](#35---hard)   | [&#9632;](#36---medium) | [&#9632;](#37---easy)  | [&#9632;](#38---hard)   |
 
 ### 1 - Easy
 
@@ -711,5 +710,17 @@ You may also use a list or array to represent a set.
 [solution](SOLUTIONS/p037/concept.md)
 
 time: 1 h, much distraction and confusion with set set set set
+
+---
+
+## 38 - Hard
+
+This problem was asked by Microsoft.
+
+You have an `N` by `N` board. Write a function that, given `N`, returns the number of possible arrangements of the board where `N` queens can be placed on the board without threatening each other, i.e. no two queens share the same row, column, or diagonal.
+
+[solution](SOLUTIONS/p038/concept.md)
+
+time: 3h
 
 ---

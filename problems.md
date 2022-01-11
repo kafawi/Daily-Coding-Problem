@@ -12,6 +12,7 @@ with link to solution and a time how log it takes
 |    **1** | [&#9632;](#10---medium) | [&#9632;](#11---medium) | [&#9632;](#12---hard)   | [&#9632;](#13---hard)  | [&#9632;](#14---medium) | [&#9632;](#15---medium) | [&#9632;](#16---easy)   | [&#9632;](#17---hard)  | [&#9632;](#18---hard)   | [&#9632;](#19---medium) |
 |    **2** | [&#9632;](#20---easy)   | [&#9632;](#21---easy)   | [&#9632;](#22---medium) | [&#9632;](#23---easy)  | [&#9632;](#24---medium) | [&#9632;](#25---hard)   | [&#9632;](#26---medium) | [&#9632;](#27---easy)  | [&#9632;](#28---medium) | [&#9632;](#29---easy)   |
 |    **3** | [&#9632;](#30---medium) | [&#9632;](#31---easy)   | [&#9632;](#32---hard)   | [&#9632;](#33---easy)  | [&#9632;](#34---medium) | [&#9632;](#35---hard)   | [&#9632;](#36---medium) | [&#9632;](#37---easy)  | [&#9632;](#38---hard)   | [&#9632;](#39---medium) |
+|    **4** | [&#9632;](#30---hard)   |
 
 ### 1 - Easy
 
@@ -745,5 +746,21 @@ You can represent a live cell with an asterisk (`*`) and a dead cell with a dot 
 [solution](SOLUTIONS/p039/concept.md)
 
 time: some hours
+
+---
+
+## 40 - Hard
+
+This problem was asked by Google.
+
+Given an array of integers where every integer occurs three times except for one integer, which only occurs once, find and return the non-duplicated integer.
+
+For example, given `[6, 1, 3, 3, 3, 6, 6]`, return `1`. Given `[13, 19, 13, 13]`, return `19`.
+
+Do this in `O(N)` time and `O(1)` space.
+
+[solution](SOLUTIONS/p040/concept.md)
+
+time: 3h, (Why did I get stucked by making the precition of the int variable...)
 
 ---

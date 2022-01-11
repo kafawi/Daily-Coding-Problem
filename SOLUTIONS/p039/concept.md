@@ -11,7 +11,7 @@ struct coord:
   x :int
   y :int
   hash() :int
-  neigbours() :[coord]
+  neighbours() :[coord]
 
 
 struct world:
@@ -52,13 +52,13 @@ world::display():
          print(".")
 
 world::iterate()
-  to_check = for each cell in alive, get all neigbour cell set
+  to_check = for each cell in alive, get all neighbour cell set
   new_alive = set()
   for each cell in to_check:
     if check in alive:
-      if 2 or 3 neigbours are in alive: new_alive.add(cell)
+      if 2 or 3 neighbours are in alive: new_alive.add(cell)
     else:
-      if 3 neigbours are in alive: new_alive.add(cell)
+      if 3 neighbours are in alive: new_alive.add(cell)
   alive = new_alive
   _get_world_bounderies()
 ```

@@ -76,7 +76,7 @@ class Coord(object):
     def __repr__(self):
         return f'(x:{self.x},y:{self.y})'
 
-    def neigbours(self):
+    def neighbours(self):
         return [Coord(self.x+i, self.y+j) for i in [-1, 0, 1] for j in [-1, 0, 1] if i != 0 or j != 0]
 
 
@@ -98,20 +98,20 @@ class World(object):
         self.br = Coord(maxx, maxy)
 
     def iterate(self):
-        # to_check = {cell.neigbours() for cell in self.alive}
+        # to_check = {cell.neighbours() for cell in self.alive}
         to_check = set()
         to_check.update(self.alive)
         for cell in self.alive:
-            to_check.update(cell.neigbours())
+            to_check.update(cell.neighbours())
 
         new_alive = set()
         for cell in to_check:
-            live_neigbours = sum(n in self.alive for n in cell.neigbours())
+            live_neighbours = sum(n in self.alive for n in cell.neighbours())
             if (
                 (cell in self.alive
-                 and live_neigbours in [2, 3])
+                 and live_neighbours in [2, 3])
                 or (cell not in self.alive
-                    and live_neigbours == 3)
+                    and live_neighbours == 3)
             ):
                 new_alive.add(cell)
         self.alive = new_alive

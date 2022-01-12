@@ -15,18 +15,18 @@ You can take a flight just once. So there is a limit, because yo cannot get lost
 
 ## algorithm ideas
 
-First we sort the flight lexicographically, than is the first valid route we found the best.
+First we sort the flight lexicographically, than the first founded route is the wanted.
 
 ```pseudo
-calculate_itinerary(fights: [(origin :airport, destination :airport)], start :airport, fights):
+calculate_itinerary(flights: [(origin :airport, destination :airport)], start :airport):
   if flights are empty:
     return [start]
-  for each flight in flights 
+  for each flight in flights:
      if flight.origin == start:
-        route = calculate_itinerary(flight.destination, flights without flight):
-        if route != None:
+        route = calculate_itinerary(flights without flight, flight.destination):
+        if route is not null:
           return [start] + route
-  return None 
+  return null 
 ```
 
 [code](solution.py)

@@ -12,7 +12,7 @@ with link to solution and a time how log it takes
 |    **1** | [&#9632;](#10---medium) | [&#9632;](#11---medium) | [&#9632;](#12---hard)   | [&#9632;](#13---hard)  | [&#9632;](#14---medium) | [&#9632;](#15---medium) | [&#9632;](#16---easy)   | [&#9632;](#17---hard)  | [&#9632;](#18---hard)   | [&#9632;](#19---medium) |
 |    **2** | [&#9632;](#20---easy)   | [&#9632;](#21---easy)   | [&#9632;](#22---medium) | [&#9632;](#23---easy)  | [&#9632;](#24---medium) | [&#9632;](#25---hard)   | [&#9632;](#26---medium) | [&#9632;](#27---easy)  | [&#9632;](#28---medium) | [&#9632;](#29---easy)   |
 |    **3** | [&#9632;](#30---medium) | [&#9632;](#31---easy)   | [&#9632;](#32---hard)   | [&#9632;](#33---easy)  | [&#9632;](#34---medium) | [&#9632;](#35---hard)   | [&#9632;](#36---medium) | [&#9632;](#37---easy)  | [&#9632;](#38---hard)   | [&#9632;](#39---medium) |
-|    **4** | [&#9632;](#40---hard)   | [&#9632;](#41---medium) |
+|    **4** | [&#9632;](#40---hard)   | [&#9632;](#41---medium) | [&#9632;](#42---hard)   |
 
 ### 1 - Easy
 
@@ -780,5 +780,21 @@ Given the list of flights `[('A', 'B'), ('A', 'C'), ('B', 'C'), ('C', 'A')]` and
 [solution](SOLUTIONS/p041/concept.md)
 
 time: 3h+ (misunderstanding of taking a flight just once)
+
+---
+
+## 42 - Hard
+
+This problem was asked by Google.
+
+Given a list of integers `S` and a target number `k`, write a function that returns a subset of `S` that adds up to `k`. If such a subset cannot be made, then return `null`.
+
+Integers can appear more than once in the list. You may assume all numbers in the list are positive.
+
+For example, given `S = [12, 1, 61, 5, 9, 2]` and `k = 24`, return `[12, 9, 2, 1]` since it sums up to `24`.
+
+[solution](SOLUTIONS/p042/concept.md)
+
+time: about 1h
 
 ---

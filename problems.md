@@ -843,6 +843,6 @@ Using a function `rand5()` that returns an integer from `1` to `5` (inclusive) w
 
 [solution](SOLUTIONS/p045/concept.md)
 
-time:
+time: multiple hours, too long, no meds, got bananas with my pseudo math
 
 ---

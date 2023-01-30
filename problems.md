@@ -901,6 +901,6 @@ d  e f  g
 
 [solution](SOLUTIONS/p048/concept.md)
 
-time: idk
+time: some hours, too detailed with the concept. Just picked up this project again
 
 ---

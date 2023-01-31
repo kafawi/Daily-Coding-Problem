@@ -686,7 +686,7 @@ time: 20 min
 
 ---
 
-## 36 - Medium
+### 36 - Medium
 
 This problem was asked by Dropbox.
 
@@ -698,7 +698,7 @@ time: 45 min
 
 ---
 
-## 37 - Easy
+### 37 - Easy
 
 This problem was asked by Google.
 
@@ -714,7 +714,7 @@ time: 1 h, much distraction and confusion with set set set set
 
 ---
 
-## 38 - Hard
+### 38 - Hard
 
 This problem was asked by Microsoft.
 
@@ -726,7 +726,7 @@ time: 3h
 
 ---
 
-## 39 - Medium
+### 39 - Medium
 
 This problem was asked by Dropbox.
 
@@ -749,7 +749,7 @@ time: some hours
 
 ---
 
-## 40 - Hard
+### 40 - Hard
 
 This problem was asked by Google.
 
@@ -765,7 +765,7 @@ time: 3h, (Why did I get stucked by making the precition of the int variable...)
 
 ---
 
-## 41 - Medium
+### 41 - Medium
 
 This problem was asked by Facebook.
 
@@ -783,7 +783,7 @@ time: 3h+ (misunderstanding of taking a flight just once)
 
 ---
 
-## 42 - Hard
+### 42 - Hard
 
 This problem was asked by Google.
 
@@ -799,7 +799,7 @@ time: about 1h
 
 ---
 
-## 43 - Easy
+### 43 - Easy
 
 This problem was asked by Amazon.
 
@@ -817,7 +817,7 @@ time: I do not know, about 1h maybe
 
 ---
 
-## 44 - Medium
+### 44 - Medium
 
 This problem was asked by Google.
 
@@ -835,7 +835,7 @@ time: idk
 
 ---
 
-## 45 - Easy
+### 45 - Easy
 
 This problem was asked by Two Sigma.
 
@@ -847,7 +847,7 @@ time: multiple hours, too long, no meds, got bananas with my pseudo math
 
 ---
 
-## 46 - Hard
+### 46 - Hard
 
 This problem was asked by Amazon.
 
@@ -861,7 +861,7 @@ time: 30m
 
 ---
 
-## 47 - Easy
+### 47 - Easy
 
 This problem was asked by Facebook.
 
@@ -875,7 +875,7 @@ time: idk
 
 ---
 
-## 48 - Medium
+### 48 - Medium
 
 This problem was asked by Google.
 
@@ -905,7 +905,7 @@ time: some hours, too detailed with the concept. Just picked up this project aga
 
 ---
 
-## 49 - Medium
+### 49 - Medium
 
 This problem was asked by Amazon.
 

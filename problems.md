@@ -919,6 +919,6 @@ Do this in `O(N)` time.
 
 [solution](SOLUTIONS/p049/concept.md)
 
-time:
+time: about 20 min
 
 ---

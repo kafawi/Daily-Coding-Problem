@@ -45,11 +45,13 @@
 """
 from enum import Enum
 
+
 class Operation(Enum):
     ADDITION = 1
     SUBTRACTION = 2
     MULTIPLICATION = 3
     DEVISION = 4
+
     @classmethod
     def parse(cls, symbol):
         return {"+": cls.ADDITION,
@@ -57,20 +59,21 @@ class Operation(Enum):
                 "*": cls.MULTIPLICATION,
                 "/": cls.DEVISION
                 }[symbol]
-        
+
     @classmethod
     def call(cls, operation):
         return {cls.ADDITION: int.__add__,
                 cls.SUBTRACTION: int.__sub__,
                 cls.MULTIPLICATION: int.__mul__,
                 cls.DEVISION: int.__floordiv__}[operation]
-    
-    
+
+
 class Node:
     __slots__ = ('operant_left', 'operant_right', 'value')
-    
+
     def __init__(self, value, left=None, right=None):
-        self.value = Operation.parse(value) if isinstance(value,str) and value in "+-*/" else value
+        self.value = Operation.parse(value) if isinstance(
+            value, str) and value in "+-*/" else value
         self.operant_left = left
         self.operant_right = right
 
@@ -81,10 +84,9 @@ def eval(term):
     # elif isinstance(term.value, Enum) and term.value in Operation:
     op1 = eval(term.operant_left)
     op2 = eval(term.operant_right)
-    return Operation.call(term.value)(op1,op2)
-    
+    return Operation.call(term.value)(op1, op2)
+
 
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
-    

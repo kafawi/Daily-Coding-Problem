@@ -946,6 +946,6 @@ You should return `45`, as it is `(3 + 2) * (4 + 5)`.
 
 [solution](SOLUTIONS/p050/concept.md)
 
-time:
+time: 1h with all the extra
 
 ---

@@ -13,7 +13,7 @@ with link to solution and a time how log it takes
 |    **2** | [&#9632;](#20---easy)   | [&#9632;](#21---easy)   | [&#9632;](#22---medium) | [&#9632;](#23---easy)  | [&#9632;](#24---medium) | [&#9632;](#25---hard)   | [&#9632;](#26---medium) | [&#9632;](#27---easy)  | [&#9632;](#28---medium) | [&#9632;](#29---easy)   |
 |    **3** | [&#9632;](#30---medium) | [&#9632;](#31---easy)   | [&#9632;](#32---hard)   | [&#9632;](#33---easy)  | [&#9632;](#34---medium) | [&#9632;](#35---hard)   | [&#9632;](#36---medium) | [&#9632;](#37---easy)  | [&#9632;](#38---hard)   | [&#9632;](#39---medium) |
 |    **4** | [&#9632;](#40---hard)   | [&#9632;](#41---medium) | [&#9632;](#42---hard)   | [&#9632;](#43---easy)  | [&#9632;](#44---medium) | [&#9632;](#45---easy)   | [&#9632;](#46---hard)   | [&#9632;](#47---easy)  | [&#9632;](#48---medium) | [&#9632;](#49---medium) |
-|    **5** | [&#9632;](#50---easy)   | [&#9632;](#51---medium) |
+|    **5** | [&#9632;](#50---easy)   | [&#9632;](#51---medium) | [&#9632;](#52---hard)   |
 
 ### 1 - Easy
 
@@ -963,5 +963,24 @@ Hint: Make sure each one of the `52!` permutations of the deck is equally likely
 [solution](SOLUTIONS/p051/concept.md)
 
 time: 1h, because documentation of explanation + 15 min in for the correction
+
+---
+
+### 52 - Hard
+
+This problem was asked by Google.
+
+Implement an LRU (Least Recently Used) cache. It should be able to be initialized with a cache size `n`, and contain the following methods:
+
+```box
+    set(key, value): sets key to value. If there are already n items in the cache and we are adding a new item, then it should also remove the least recently used item.
+    get(key): gets the value at key. If no such key exists, return null.
+```
+
+Each operation should run in `O(1)` time.
+
+[solution](SOLUTIONS/p052/concept.md)
+
+time:
 
 ---

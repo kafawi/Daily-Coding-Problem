@@ -145,7 +145,6 @@ class LRUCache:
         self.data_list.update(index, key, value)
         self.data_list.move_front(index)
         # del old_value
-        # del old_key
 
 
 if __name__ == '__main__':

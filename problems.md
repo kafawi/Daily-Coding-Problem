@@ -981,6 +981,6 @@ Each operation should run in `O(1)` time.
 
 [solution](SOLUTIONS/p052/concept.md)
 
-time:
+time: some hours, too much efford with this.
 
 ---

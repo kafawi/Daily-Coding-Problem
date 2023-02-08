@@ -177,6 +177,7 @@ push_front(key, value)
   data[size] = (key, value, -1, head)
   data[head].prev = size
   head = size
+  if first time (size == 0): tail = size  #this could also be the initial value of tail.
   size += 1
 
 get_value(index)
@@ -215,6 +216,8 @@ set(key: Hashable, value :any)
       index = data_list.get_tail()
       old_key = data_list.get_key(index)
       key2index.remove(old_key)
+      key2index[key] = index
+
       old_value = data_list.get_value(index)
       data_list.update(index, key, value)
       data_list.move_front(index)

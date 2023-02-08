@@ -34,26 +34,31 @@ with every place, we reduce the number of indexes, we can choose from, because o
 To imagin, we pick a card, and throw the old placeholder back in the bin bucket.
 
 ```pseudo
-for i in 0..N:
-  picked_card_idx = random index between i..N
+for i in [0..N-1]:
+  picked_card_idx = random index between [i..N[
   swap entries of i and picked_card_index in the array
 ```
 
 Next, let us fill the places of the array from the back to front, to reduce the confusion of to much arithmetic.
-The random function, we got, was already a little hint. first i was confused of the untypical interval for informations, but the offset of 1 is very handy for this.
 
 ```pseudo
 shuffle(array: [T]) -> void
-  for i in N-1..0:
-    picked_card_index = rand_int(i)
+  for i in [N-1..0[:
+    picked_card_index = random index between [0..i]
     # swap
     tmp = array[i]
     array[i] = array[picked_card_index]
     array[picked_card_index] = tmp
 ```
 
+We have to becareful with the strange range of the given randomfunction. So to use it as an index in a first-is-zero based world, we have to subtract the offset.
+
 ## how to test
 
-For this, i will only test, if every card is in the shuffeld deck. For a statistic test I would run the funktion about `M*N!` and for each permutation, a number count increases. In the end, all number counts should be round about the same number `M +- epsilon`, an error that I tollerate. But how to choose `M` and `epsilon`? I don't know actually. One thing is for sure: `M ~ 1/epsilon`. So I would choos a very big `M > N` and an `epsilon = M/N`. But I will pass the statistic test.
+For this, i will only test, if every card is in the shuffeld deck.
+
+For a statistic test I would run the funktion about `M*N!` and for each permutation, a number count increases. In the end, all number counts should be round about the same number `M +- epsilon`, an error that I tollerate. But how to choose `M` and `epsilon`? I don't know actually. One thing is for sure: `M ~ 1/epsilon`. So I would choos a very big `M > N` and an `epsilon = M/N`. But I will pass the statistic test.
+
+But we can test if all permutaions are met, when we run the function dozons of times.
 
 [code](solution.py)

@@ -962,6 +962,6 @@ Hint: Make sure each one of the `52!` permutations of the deck is equally likely
 
 [solution](SOLUTIONS/p051/concept.md)
 
-time: 1h, because documentation of explanation
+time: 1h, because documentation of explanation + 15 min in for the correction
 
 ---

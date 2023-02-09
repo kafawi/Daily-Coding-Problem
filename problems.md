@@ -993,6 +993,6 @@ Implement a queue using two stacks. Recall that a queue is a FIFO (first-in, fir
 
 [solution](SOLUTIONS/p053/concept.md)
 
-time:
+time: 1h  with everything, concept alone maybe 10 to 20 min
 
 ---
